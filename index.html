@@ -13,7 +13,7 @@
   <header class="header">
     <div class="header__container">
       <div id="skipNav"><a href="#main" tabindex="2">Skip to content</a></div>
-        <img src="img/logo.png" alt="Sample University" id="header-img" width="100" class="header__logo" aria-label="Sample University" tabindex="1"/>
+        <img src="img/logo.png" alt="Sample University" id="header-img" width="100" class="header__logo" aria-label="Sample University" tabindex="1">
       <nav aria-label="Site navigation and site search">
         <ul>
           <li><a href="#featured" class="nav-link" tabindex="3">Featured</a></li>
@@ -25,13 +25,13 @@
     </div>
   </header>
 
-  <section class="hero">
+  <div class="hero">
     <div class="hero__container">
       <figure>
         <img src="img/hero.png" alt="Photo of Glasgow city centre">
       </figure>
     </div>
-  </section>
+  </div>
 
   <main id="main">
 
@@ -40,37 +40,37 @@
           <h2>Featured</h2>
           <div class="featured__cards">
             
-            <a href="#">
-              <div class="featured__card" tabindex="7">
+            <a href="#" tabindex="7">
+              <div class="featured__card">
                 <div class="card-text">
                   <h3>Item 1</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <time datetime="01/02/2023" class="card-date">01/02/2023</time>
+                <time datetime="2023-02-01" class="card-date">2023-02-01</time>
                 <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?lecture" alt="Sample Image">
                 </figure>
               </div>
             </a>
-            <a href="#">
-              <div class="featured__card" tabindex="8">
+            <a href="#" tabindex="8">
+              <div class="featured__card">
                 <div class="card-text">
                   <h3>Item 2</h3>
                   <p>Vitae ultricies leo integer malesuada nunc vel. Nam libero justo laoreet sit amet cursus.</p>
                 </div>
-                <time datetime="31/01/2023" class="card-date">31/01/2023</time>
+                <time datetime="2023-01-31" class="card-date">2023-01-31</time>
                 <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?campus" alt="Sample Image">
                 </figure>
               </div>
             </a>
-            <a href="#">
-              <div class="featured__card" tabindex="9">
+            <a href="#" tabindex="9">
+              <div class="featured__card">
                 <div class="card-text">
                   <h3>Item 3</h3>
                   <p>Morbi non arcu risus quis varius quam quisque id diam. Laoreet non curabitur gravida arcu ac. Mattis pellentesque id nibh tortor.</p>
                 </div>
-                <time datetime="18/01/2023" class="card-date">18/01/2023</time>
+                <time datetime="2023-01-18" class="card-date">2023-01-18</time>
                 <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?research" alt="Sample Image">
                 </figure>
@@ -86,13 +86,14 @@
         <div class="discover__wrapper">
           <h2>Discover Sample</h2>
           <div class="box-bottom">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/r6WVBSRe_ek?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-            <button aria-label="Open video transcipt"><div class="transcript-link"><i class="fa-solid fa-caret-right"></i> Video Transcript</div></button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6WVBSRe_ek?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button aria-label="Open video transcipt" class="transcript-link"><i class="fa-solid fa-caret-right"></i> Video Transcript</button>
             <!-- <div class="transcript">
               <p>Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Egestas sed tempus urna et pharetra.</p>
               <p>Neque volutpat ac tincidunt vitae semper quis lectus nulla. Lacus laoreet non curabitur gravida arcu. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est.</p>
               <p>Ultricies leo integer malesuada nunc vel. Odio aenean sed adipiscing diam. Massa tempor nec feugiat nisl pretium fusce id. Vitae sapien pellentesque habitant morbi tristique senectus.</p>
             </div> -->
+          </div>
         </div>
       </section>
 
@@ -106,10 +107,10 @@
             <form action='#'>
               
               <fieldset>
-                <label for="name">Name <abbr class="required-text" aria-label="required"></abbr><input type="text" id="name" required placeholder="e.g. John Smith" />
+                <label for="name" aria-label="required">Name <abbr class="required-text"></abbr><input type="text" id="name" required placeholder="e.g. John Smith">
                 </label>
-                <label for="email">
-                  Email <abbr class="required-text" aria-label="required"></abbr><input type="email" id="email" required placeholder="e.g. john@example.com" />
+                <label for="email" aria-label="required">
+                  Email <abbr class="required-text"></abbr><input type="email" id="email" required placeholder="e.g. john@example.com">
                 </label>
                 <label for="dropdown">
                   Subject
@@ -123,7 +124,7 @@
               </fieldset>
               
               <fieldset>
-                <legend>How would you like us to contact you? <abbr class="required-text" aria-label="required"></abbr></legend>
+                <legend>How would you like us to contact you? <abbr class="required-text"></abbr></legend>
                 <label for="radio1" class="option"><input type="radio" id="radio1" name="radio-type" class="inline" value="Email"> Email</label>
                 <label for="radio2" class="option"><input type="radio" id="radio2" name="radio-type" class="inline" value="Text Message"> Text Message</label>
                 <label for="radio3" class="option"><input type="radio" id="radio3" name="radio-type" class="inline" value="Phone"> Phone</label>
@@ -139,14 +140,14 @@
               </fieldset>
               
               <fieldset>
-                <label for="comment">Your comments: <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Please enter your comments"></textarea></label>
+                <label for="comments">Your comments: <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Please enter your comments"></textarea></label>
               </fieldset>
               
               <fieldset>
-                <label for="terms-and-conditions" name="terms-and-conditions">
-                  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" required value="checked"/> I accept the <a href="#">terms and conditions</a>
+                <label for="terms-and-conditions">
+                  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="checked"> I accept the <a href="#">terms and conditions</a>
                 </label>
-                <button type="submit" id="submit" value="Proceed to review" />Proceed to review</button>
+                <button type="submit" id="submit" value="Proceed to review">Proceed to review</button>
               </fieldset>
               
             </form>
