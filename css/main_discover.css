@@ -1,0 +1,45 @@
+.discover {
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.discover__wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.discover__wrapper .box-bottom {
+  display: flex;
+}
+.discover__wrapper .box-bottom iframe {
+  width: 50%;
+  border-radius: 20px;
+}
+.discover__wrapper .box-bottom button {
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 3rem;
+}
+.discover__wrapper .box-bottom .transcript-link {
+  border: 10px solid white;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-left: 3rem;
+}
+.discover__wrapper .box-bottom .transcript-link i {
+  margin-right: 0.4rem;
+}
+.discover__wrapper .box-bottom .transcript {
+  width: auto;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=main_discover.css.map */

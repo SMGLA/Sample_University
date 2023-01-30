@@ -29,8 +29,8 @@ $radio-checked-border-color: #19284E !default;
 
 .contact {
   background-color: $section-bg;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   padding: 1rem 0;
   width: 100%;
   &__wrapper {
@@ -68,7 +68,7 @@ $radio-checked-border-color: #19284E !default;
         text-decoration: underline;
       }
       legend {
-        margin: 2rem 0;
+        margin: 0rem 0 1rem;
       }
       label {
         display: block;
@@ -76,6 +76,9 @@ $radio-checked-border-color: #19284E !default;
       }
       .required-text {
         color: $required-mark;
+        &::before {
+          content: "*";
+        }
       }
       input, textarea, select {
         background-color: $theme-color-white;

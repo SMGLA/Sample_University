@@ -14,13 +14,13 @@
     <div class="header__container">
       <div id="skipNav"><a href="#main" tabindex="2">Skip to content</a></div>
         <img src="img/logo.png" alt="Sample University" id="header-img" width="100" class="header__logo" aria-label="Sample University" tabindex="1"/>
-      <nav class="header__nav" aria-label="Site navigation and site search">
-        <ul class="nav__links">
+      <nav aria-label="Site navigation and site search">
+        <ul>
           <li><a href="#featured" class="nav-link" tabindex="3">Featured</a></li>
           <li><a href="#discover-sample" class="nav-link" tabindex="4">Discover Sample</a></li>
           <li><a href="#contact-us" class="nav-link" tabindex="5">Contact Us</a></li>
         </ul>
-          <button type="button" class="search" aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
       </nav>
     </div>
   </header>
@@ -28,7 +28,7 @@
   <section class="hero">
     <div class="hero__container">
       <figure>
-        <img src="img/hero.png" alt="">
+        <img src="img/hero.png" alt="Photo of Glasgow city centre">
       </figure>
     </div>
   </section>
@@ -42,36 +42,36 @@
             
             <a href="#">
               <div class="featured__card" tabindex="7">
-                <div class="featured__card--text">
+                <div class="card-text">
                   <h3>Item 1</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
-                <figure class="featured__card--image">
+                <time datetime="01/02/2023" class="card-date">01/02/2023</time>
+                <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?lecture" alt="Sample Image">
                 </figure>
               </div>
             </a>
             <a href="#">
               <div class="featured__card" tabindex="8">
-                <div class="featured__card--text">
+                <div class="card-text">
                   <h3>Item 2</h3>
                   <p>Vitae ultricies leo integer malesuada nunc vel. Nam libero justo laoreet sit amet cursus.</p>
                 </div>
-                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
-                <figure class="featured__card--image">
+                <time datetime="31/01/2023" class="card-date">31/01/2023</time>
+                <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?campus" alt="Sample Image">
                 </figure>
               </div>
             </a>
             <a href="#">
               <div class="featured__card" tabindex="9">
-                <div class="featured__card--text">
+                <div class="card-text">
                   <h3>Item 3</h3>
                   <p>Morbi non arcu risus quis varius quam quisque id diam. Laoreet non curabitur gravida arcu ac. Mattis pellentesque id nibh tortor.</p>
                 </div>
-                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
-                <figure class="featured__card--image">
+                <time datetime="18/01/2023" class="card-date">18/01/2023</time>
+                <figure class="card-image">
                   <img src="https://source.unsplash.com/random/?research" alt="Sample Image">
                 </figure>
               </div>
@@ -82,20 +82,34 @@
         </div>
       </section>
 
+      <section class="discover" id="discover-sample">
+        <div class="discover__wrapper">
+          <h2>Discover Sample</h2>
+          <div class="box-bottom">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6WVBSRe_ek?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button aria-label="Open video transcipt"><div class="transcript-link"><i class="fa-solid fa-caret-right"></i> Video Transcript</div></button>
+            <!-- <div class="transcript">
+              <p>Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Egestas sed tempus urna et pharetra.</p>
+              <p>Neque volutpat ac tincidunt vitae semper quis lectus nulla. Lacus laoreet non curabitur gravida arcu. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est.</p>
+              <p>Ultricies leo integer malesuada nunc vel. Odio aenean sed adipiscing diam. Massa tempor nec feugiat nisl pretium fusce id. Vitae sapien pellentesque habitant morbi tristique senectus.</p>
+            </div> -->
+        </div>
+      </section>
+
       <section class="contact" id="contact-us">
         <div class="contact__wrapper">
           <div class="contact__header">
-            <h2 id="title">Contact Form</h2>
-            <p id="description">Thank you for taking the time to help us improve our website</p>
+            <h2>Contact Form</h2>
+            <p>Thank you for taking the time to help us improve our website</p>
           </div>
           <div class="contact__form">
-            <form id="contact-form"  action='#'>
+            <form action='#'>
               
               <fieldset>
-                <label id="name-label">Name <abbr class="required-text" aria-label="required">*</abbr><input type="text" id="name" required placeholder="e.g. John Smith" />
+                <label for="name">Name <abbr class="required-text" aria-label="required"></abbr><input type="text" id="name" required placeholder="e.g. John Smith" />
                 </label>
-                <label id="email-label">
-                  Email <abbr class="required-text" aria-label="required">*</abbr><input type="email" id="email" required placeholder="john@example.com" />
+                <label for="email">
+                  Email <abbr class="required-text" aria-label="required"></abbr><input type="email" id="email" required placeholder="e.g. john@example.com" />
                 </label>
                 <label for="dropdown">
                   Subject
@@ -109,7 +123,7 @@
               </fieldset>
               
               <fieldset>
-                <legend>How would you like us to contact you? <abbr class="required-text" aria-label="required">*</abbr></legend>
+                <legend>How would you like us to contact you? <abbr class="required-text" aria-label="required"></abbr></legend>
                 <label for="radio1" class="option"><input type="radio" id="radio1" name="radio-type" class="inline" value="Email"> Email</label>
                 <label for="radio2" class="option"><input type="radio" id="radio2" name="radio-type" class="inline" value="Text Message"> Text Message</label>
                 <label for="radio3" class="option"><input type="radio" id="radio3" name="radio-type" class="inline" value="Phone"> Phone</label>
@@ -118,8 +132,6 @@
               <fieldset>
                 <legend>Please descrive our website (Check all that apply)</legend>
                 <label for="check1" class="option"><input type="checkbox" id="check1" name="check-type" value="Accessible" class="inline">Accessible</label>
-                
-        <!--         <label class="styled-checkbox" for="checkbox1"><input type="checkbox" name="checkbox1" id="checkbox1" value="1"><span class="styled-checkbox-icon"></span><span class="styled-checkbox-label">Checkbox (default)</span></label> -->
                 
                 <label for="check2" class="option"><input type="checkbox" id="check2" name="check-type" value="Informative" class="inline"> Informative</label>
                 <label for="check3" class="option"><input type="checkbox" id="check3" name="check-type" value="Good design" class="inline"> Good design</label>
@@ -141,7 +153,8 @@
           </div>
         </div>
       </section>
-
+  
+    </main>
   
   <footer>
     <div class="footer__wrapper">
@@ -157,9 +170,7 @@
         <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
-
     </div>
-
   </footer>
 
 </body>

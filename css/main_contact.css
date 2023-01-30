@@ -1,7 +1,7 @@
 .contact {
   background-color: #F8F8F8;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   padding: 1rem 0;
   width: 100%;
 }
@@ -48,7 +48,7 @@
   text-decoration: underline;
 }
 .contact__form fieldset legend {
-  margin: 2rem 0;
+  margin: 0rem 0 1rem;
 }
 .contact__form fieldset label {
   display: block;
@@ -56,6 +56,9 @@
 }
 .contact__form fieldset .required-text {
   color: red;
+}
+.contact__form fieldset .required-text::before {
+  content: "*";
 }
 .contact__form fieldset input, .contact__form fieldset textarea, .contact__form fieldset select {
   background-color: #FFFFFF;
