@@ -67,6 +67,10 @@
   min-height: 3em;
   padding: 0.2em 1em;
   width: 100%;
+}
+.contact__form fieldset label,
+.contact__form fieldset input[type=checkbox],
+.contact__form fieldset button {
   cursor: pointer;
 }
 .contact__form fieldset .dropdown {

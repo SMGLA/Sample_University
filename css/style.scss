@@ -3,6 +3,7 @@
 @import url('../css/main_contact.css');
 $color-theme: #0E1A44;
 $color-highlight: #FEDD00;
+$color-forcus: #FE4400;
 $color-white: #FFFFFF;
 $color-lightgrey: #F8F8F8;
 $font-main: 'Jaldi', sans-serif;
@@ -17,6 +18,14 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+
+*:focus {
+  border-radius: 10px;
+  outline: 4px $color-forcus solid;
+  border: 0.4rem;
+  }
+  
 
 body {
   margin: 0;
@@ -81,11 +90,9 @@ h2 {
           clip: auto;
           z-index: 1000;
           background-color: $color-highlight;
-          font-size: 1rem;
-          color: 2px dashed $color-theme;
+          font-size: 1.4rem;
           text-decoration: none;
           padding: 0.8rem;
-          border-bottom: 2px dashed $color-theme;
           text-align: center;
         }
       }
@@ -125,6 +132,7 @@ h2 {
       button {
         background: $color-theme;
         border: 1px solid $color-theme;
+        width: 4rem;
         i {
           color: $color-white;
           font-size: 1.4rem;

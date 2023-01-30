@@ -87,6 +87,10 @@ $radio-checked-border-color: #19284E !default;
         min-height: 3em;
         padding: 0.2em 1em;
         width: 100%;
+      }
+      label,
+      input[type='checkbox'],
+      button {
         cursor: pointer;
       }
       .dropdown {

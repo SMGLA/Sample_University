@@ -12,6 +12,12 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  border-radius: 10px;
+  outline: 4px #FE4400 solid;
+  border: 0.4rem;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -77,11 +83,9 @@ h2 {
   clip: auto;
   z-index: 1000;
   background-color: #FEDD00;
-  font-size: 1rem;
-  color: 2px dashed #0E1A44;
+  font-size: 1.4rem;
   text-decoration: none;
   padding: 0.8rem;
-  border-bottom: 2px dashed #0E1A44;
   text-align: center;
 }
 .header__container__logo {
@@ -119,6 +123,7 @@ h2 {
 .header__container nav button {
   background: #0E1A44;
   border: 1px solid #0E1A44;
+  width: 4rem;
 }
 .header__container nav button i {
   color: #FFFFFF;
