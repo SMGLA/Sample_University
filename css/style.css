@@ -2,6 +2,16 @@
 @import url("../css/main_featured.css");
 @import url("../css/main_contact.css");
 /* BASE SETTING */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   width: 100%;

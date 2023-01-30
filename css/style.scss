@@ -8,6 +8,15 @@ $color-lightgrey: #F8F8F8;
 $font-main: 'Jaldi', sans-serif;
 
 /* BASE SETTING */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
