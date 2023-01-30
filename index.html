@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/84071b0cd5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sample University | Home</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div id="skipNav"><a href="#main" tabindex="2">Skip to content</a></div>
+      <a href="#" alt="Sample University" aria-label="Sample University" tabindex="1">
+        <img src="img/logo.png" alt="Sample University" id="header-img" width="100" class="header__logo"/>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__links">
+          <li><a href="#featured" class="nav-link" tabindex="3">Featured</a></li>
+          <li><a href="#discover-sample" class="nav-link" tabindex="4">Discover Sample</a></li>
+          <li><a href="#contact-us" class="nav-link" tabindex="5">Contact Us</a></li>
+        </ul>
+          <button class="search" aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__container">
+      <figure>
+        <img src="img/hero.png" alt="">
+      </figure>
+    </div>
+  </section>
+
+  <main id="main">
+
+      <section class="featured">
+        <div class="featured__wrapper">
+          <h2>Featured</h2>
+          <div class="featured__cards">
+            
+            <a href="#" tabindex="7">
+              <div class="featured__card">
+                <div class="featured__card--text">
+                  <h3>Item 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
+                <figure class="featured__card--image">
+                  <img src="https://source.unsplash.com/random/?lecture" alt="Sample Image">
+                </figure>
+              </div>
+            </a>
+            <a href="#" tabindex="8">
+              <div class="featured__card">
+                <div class="featured__card--text">
+                  <h3>Item 2</h3>
+                  <p>Vitae ultricies leo integer malesuada nunc vel. Nam libero justo laoreet sit amet cursus.</p>
+                </div>
+                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
+                <figure class="featured__card--image">
+                  <img src="https://source.unsplash.com/random/?campus" alt="Sample Image">
+                </figure>
+              </div>
+            </a>
+            <a href="#" tabindex="9">
+              <div class="featured__card">
+                <div class="featured__card--text">
+                  <h3>Item 3</h3>
+                  <p>Morbi non arcu risus quis varius quam quisque id diam. Laoreet non curabitur gravida arcu ac. Mattis pellentesque id nibh tortor.</p>
+                </div>
+                <time datetime="28/01/2023" class="featured__card--date">28/01/2023</time>
+                <figure class="featured__card--image">
+                  <img src="https://source.unsplash.com/random/?research" alt="Sample Image">
+                </figure>
+              </div>
+            </a>
+            
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__wrapper">
+          <div class="contact__header">
+            <h2 id="title">Contact Form</h2>
+            <p id="description">Thank you for taking the time to help us improve our website</p>
+          </div>
+          <div class="contact__form">
+            <form id="contact-form"  action='#'>
+              
+              <fieldset>
+                <label id="name-label">Name <abbr class="required-text" aria-label="required">*</abbr><input type="text" id="name" required placeholder="Enter your name" />
+                </label>
+                <label id="email-label">
+                  Email <abbr class="required-text" aria-label="required">*</abbr><input type="email" id="email" required placeholder="Enter your email" />
+                </label>
+                <label for="dropdown">
+                  Subject
+                  <select id="dropdown" name="dropdown" class="dropdown">
+                    <option value="">(Please select one)</option>
+                    <option value="Enquiry">Enquiry</option>
+                    <option value="Request">Request</option>
+                    <option value="Complaint">Complaint</option>
+                  </select>
+                </label>
+              </fieldset>
+              
+              <fieldset>
+                <legend>How would you like us to contact you? <abbr class="required-text" aria-label="required">*</abbr></legend>
+                <label for="Email" class="option"><input type="radio" id="radio1" name="radio-type" class="inline" value="Email"> Email</label>
+                <label for="Text Message" class="option"><input type="radio" id="radio2" name="radio-type" class="inline" value="Text Message"> Text Message</label>
+                <label for="Phone" class="option"><input type="radio" id="radio3" name="radio-type" class="inline" value="Phone"> Phone</label>
+              </fieldset>
+              
+              <fieldset>
+                <legend>Please descrive our website (Check all that apply)</legend>
+                <label for="checkbox1" class="option"><input type="checkbox" id="check1" name="check-type" value="Accessible" class="inline">Accessible</label>
+                
+        <!--         <label class="styled-checkbox" for="checkbox1"><input type="checkbox" name="checkbox1" id="checkbox1" value="1"><span class="styled-checkbox-icon"></span><span class="styled-checkbox-label">Checkbox (default)</span></label> -->
+                
+                <label for="checkbox2" class="option"><input type="checkbox" id="check2" name="check-type" value="Informative" class="inline"> Informative</label>
+                <label for="checkbox3" class="option"><input type="checkbox" id="check3" name="check-type" value="Good design" class="inline"> Good design</label>
+                <label for="checkbox4" class="option"><input type="checkbox" id="check4" name="check-type" value="Other" class="inline"> Other</label>
+              </fieldset>
+              
+              <fieldset>
+                <label for="comment">Your comments: <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Please enter your comments"></textarea></label>
+              </fieldset>
+              
+              <fieldset>
+                <label for="terms-and-conditions" name="terms-and-conditions">
+                  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" required value="checked"/> I accept the <a href="#">terms and conditions</a>
+                </label>
+                <button type="submit" id="submit" value="Proceed to review" />Proceed to review</button>
+              </fieldset>
+              
+            </form>
+          </div>
+        </div>
+      </section>
+
+  
+  <footer>
+    <div class="footer__wrapper">
+      <div class="footer__wrapper--container-left">
+        <a href="#top" aria-label="To Top"><img src="img/logo.png" alt="Sample University"></a>
+      </div>
+      <div class="footer__wrapper--container-right">
+        <small>©2023 Sample University</small>
+        <address>Address: 100 Victoria road, Glasgow G2 3TG United Kingdom</address>
+      </div>
+      <div class="footer__wrapper--container-sns">
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
