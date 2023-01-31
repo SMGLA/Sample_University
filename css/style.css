@@ -3,10 +3,6 @@
 @import url("../css/main_discover.css");
 @import url("../css/main_contact.css");
 /* BASE SETTING */
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -17,6 +13,10 @@ html {
   border-radius: 10px;
   outline: 4px #FE4400 solid;
   border: 0.4rem;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
@@ -34,6 +34,10 @@ figure {
 
 img {
   vertical-align: top;
+}
+
+iframe {
+  border-width: 0px;
 }
 
 a {
@@ -176,6 +180,7 @@ h2 {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(70%);
 }
 
 main {
