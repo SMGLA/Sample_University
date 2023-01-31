@@ -29,8 +29,9 @@
       display: flex;
       flex-direction: column;
       text-decoration: none;
+      &:active,
       :visited {
-        color: #480072;
+        color: #0E1A44;
       }
     }
     

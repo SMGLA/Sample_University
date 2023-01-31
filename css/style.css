@@ -11,8 +11,8 @@
 
 *:focus {
   border-radius: 10px;
-  outline: 4px #FE4400 solid;
-  border: 0.4rem;
+  outline: 0.4rem #FE4400 solid;
+  outline-offset: 0;
 }
 
 html {
@@ -190,7 +190,7 @@ main section {
 
 footer {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   background: #0E1A44;
   text-align: center;
 }
