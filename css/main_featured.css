@@ -29,10 +29,13 @@
   flex-direction: column;
   color: #0E1A44;
 }
-.featured__card:focus {
-  border-radius: 10px;
-  outline: 4px red solid;
-  border: 0.4rem;
+.featured__card a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.featured__card a :visited {
+  color: #480072;
 }
 .featured__card .card-text {
   order: 1;
