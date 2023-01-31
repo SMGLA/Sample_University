@@ -18,7 +18,7 @@
     }
   }
   &__card {
-    background: #F8F8F8;
+    background: $color-lightgrey;
     border-radius: 0 0 4% 4%;
     width: 100%;
     margin: 0 0 2rem;
@@ -34,11 +34,6 @@
       }
     }
     
-    // &:focus {
-    //   border-radius: 10px;
-    //   outline: 4px red solid;
-    //   border: 0.4rem;
-    //   }
     .card-text {
       order: 1;
       display: flex;

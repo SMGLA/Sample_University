@@ -51,10 +51,6 @@ iframe {
   border-width: 0px;
 }
 
-// a {
-//   text-decoration: none;
-// }
-
 h1,
 h2,
 h3 {
@@ -147,6 +143,7 @@ h2 {
         border: 1px solid $color-theme;
         width: 3rem;
         margin-left: 1.4rem;
+        cursor: pointer;
         i {
           color: $color-white;
           font-size: 1.4rem;
