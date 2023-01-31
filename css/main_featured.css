@@ -58,9 +58,13 @@
   order: 0;
   aspect-ratio: 16/9;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .featured__card .card-image img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .featured__card {

@@ -7,14 +7,20 @@
     max-width: 1280px;
     margin: 0 auto;
     .box-bottom {
-      display: flex;
+      @media (min-width: 768px) {
+          display: flex;
+      }
       iframe {
-        width: 50%;
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 60%;
+        }
+        border: none;
         border-radius: 20px;
       }
       button {
         background-color: transparent;
-        border: 1px solid white;
+        border: 1px solid $color-white;
         cursor: pointer;
         outline: none;
         padding: 0;
@@ -24,11 +30,14 @@
         height: 3rem;
       }
       .transcript-link {
-        border: 10px solid white;
+        // border: 10px solid tomato;
         display: flex;
         align-items: center;
         font-size: 1.4rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
+        @media (min-width: 768px) {
+          margin-left: 3rem;
+        }
         i {
           margin-right: 0.4rem;
         }

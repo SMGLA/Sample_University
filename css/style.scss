@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Playfair+Display&display=swap');
 @import url('../css/main_featured.css');
 @import url('../css/main_discover.css');
 @import url('../css/main_contact.css');
@@ -8,6 +8,8 @@ $color-forcus: #FE4400;
 $color-white: #FFFFFF;
 $color-lightgrey: #F8F8F8;
 $font-main: 'Jaldi', sans-serif;
+$font-h1: 'Playfair Display', serif;
+
 
 /* BASE SETTING */
 html {
@@ -31,7 +33,7 @@ html {
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: $font-main;
   color: $color-theme;
   box-sizing: border-box;
@@ -107,15 +109,20 @@ h2 {
       display: flex;
       align-items: center;
       ul {
-        display: flex;
         margin: 0;
         align-items: center;
         padding: 0;
+        @media (min-width: 768px) {
+          display: flex;
+        }
         li {
           list-style: none;
-          + li {
-            margin-left: 2rem;
+          @media (min-width: 768px) {
+            + li {
+              margin-left: 2rem;
+            }
           }
+          
           a {
             font-size: 1.4rem;
             color: $color-white;
@@ -150,15 +157,36 @@ h2 {
 .hero {
   width: 100%;
   &__container {
+    // height: 30vh;
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    position: relative;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    h1 {
+      position: absolute;
+      color: $color-white;
+      font-size: 4rem;
+      z-index:1;
+      font-family: 'Playfair Display', serif;
+      line-height: 3.6rem;
+      margin-left: 4rem;
+      top: 6rem;
+      @media (min-width: 768px) {
+        margin-left: 10rem;
+        top: 11rem;
+      }
+    }
     img {
       margin: 0;
       width: 100%;
-      height: 30vh;
+      height: 60vh;
       object-fit: cover;
+      z-index:-9999;
+      filter: brightness(70%);
     }
   }
 }
@@ -175,15 +203,18 @@ main {
 // -------- FOOTER -------- //
 footer {
   width: 100%;
-  height: 100%;
+  height: 46vh;
   background: $color-theme;
+  text-align: center;
   .footer__wrapper {
     width: 90%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
     img {
       width: 100px;
     }
@@ -191,8 +222,9 @@ footer {
 
   .footer__wrapper--container-right {
     width: auto;
-    text-align: center;
-
+    @media (min-width: 768px) {
+      text-align: center;
+    }
     margin-top: auto;
     margin-bottom: 0;
     address,
