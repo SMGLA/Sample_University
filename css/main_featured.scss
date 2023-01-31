@@ -18,7 +18,7 @@
     }
   }
   &__card {
-    background: $color-lightgrey;
+    background: #F8F8F8;
     border-radius: 0 0 4% 4%;
     width: 100%;
     margin: 0 0 2rem;
@@ -29,8 +29,10 @@
       display: flex;
       flex-direction: column;
       text-decoration: none;
+      color: #0E1A44;
       &:active,
-      :visited {
+      &:focus,
+      &:visited {
         color: #0E1A44;
       }
     }
@@ -41,6 +43,7 @@
       flex-direction: column;
       padding: 1rem;
       margin-bottom: auto;
+      color: #0E1A44;
       h3 {
         font-size: 1.8rem;
       }
