@@ -9,7 +9,7 @@
   box-sizing: inherit;
 }
 
-*:focus {
+*:focus-visible {
   border-radius: 10px;
   outline: 0.4rem #FE4400 solid;
   outline-offset: 0;

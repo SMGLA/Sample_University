@@ -20,12 +20,13 @@ $font-h1: 'Playfair Display', serif;
   box-sizing: inherit;
 }
 
-*:focus {
+*:focus-visible {
   border-radius: 10px;
   outline: 0.4rem $color-focus solid;
   outline-offset: 0;
   }
-  
+
+
 html {
   box-sizing: border-box;
 }
