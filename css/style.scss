@@ -154,42 +154,88 @@ h2 {
 }
 
 // -------- HERO -------- //
+// .hero {
+//   width: 100%;
+//   height: 60vh;
+//   overflow: hidden;
+//   &__container {
+//     // height: 30vh;
+//     width: 100%;
+//     margin: 0 auto;
+//     padding: 0;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//     h1 {
+//       position: absolute;
+//       color: $color-white;
+//       font-size: 4rem;
+//       z-index:1;
+//       font-family: 'Playfair Display', serif;
+//       line-height: 3.6rem;
+//       margin-left: 4rem;
+//       top: 6rem;
+//       @media (min-width: 768px) {
+//         margin-left: 10rem;
+//         top: 11rem;
+//       }
+//     }
+//     img {
+//       margin: 0;
+//       width: 100%;
+//       // height: 60vh;
+//       object-fit: cover;
+//       z-index:-9999;
+//       filter: brightness(70%);
+//     }
+//   }
+// }
 .hero {
   width: 100%;
-  &__container {
-    // height: 30vh;
-    width: 100%;
+  height: 60vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  
+  .hero__container {
+    width: 90%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0;
-    position: relative;
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    h1 {
-      position: absolute;
+  }
+  
+  .hero__description {
+    z-index: 1;
+    
+     h1 {
       color: $color-white;
-      font-size: 4rem;
-      z-index:1;
       font-family: 'Playfair Display', serif;
-      line-height: 3.6rem;
-      margin-left: 4rem;
-      top: 6rem;
-      @media (min-width: 768px) {
-        margin-left: 10rem;
-        top: 11rem;
-      }
-    }
+      font-size: 4rem;
+    } 
+  }
+  
+  figure {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    
     img {
-      margin: 0;
       width: 100%;
-      height: 60vh;
+      height: auto;
       object-fit: cover;
-      z-index:-9999;
-      filter: brightness(70%);
     }
   }
 }
+
 
 // -------- MAIN -------- //
 main {
@@ -203,7 +249,7 @@ main {
 // -------- FOOTER -------- //
 footer {
   width: 100%;
-  height: 46vh;
+  height: 30vh;
   background: $color-theme;
   text-align: center;
   .footer__wrapper {

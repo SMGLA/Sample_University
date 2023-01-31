@@ -25,14 +25,25 @@
     </div>
   </header>
 
-  <div class="hero">
+  <!-- <div class="hero">
     <div class="hero__container">
       <h1>Welcome to<br>Sample University</h1>
       <figure>
         <img src="img/hero.png" alt="Photo of Glasgow city centre">
       </figure>
     </div>
+  </div> -->
+
+  <div class="hero">
+    <div class="hero__description hero__container">
+      <h1>Welcome to Sample University</h1>
+    </div>
+    <figure>
+        <img src="img/hero.png" alt="Photo of Glasgow city centre">
+    </figure>
   </div>
+
+
 
   <main id="main">
 
@@ -88,12 +99,14 @@
           <h2>Discover Sample</h2>
           <div class="box-bottom">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/r6WVBSRe_ek?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button aria-label="Open video transcipt" class="transcript-link"><i class="fa-solid fa-caret-right"></i> Video Transcript</button>
-            <!-- <div class="transcript">
-              <p>Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Egestas sed tempus urna et pharetra.</p>
-              <p>Neque volutpat ac tincidunt vitae semper quis lectus nulla. Lacus laoreet non curabitur gravida arcu. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est.</p>
-              <p>Ultricies leo integer malesuada nunc vel. Odio aenean sed adipiscing diam. Massa tempor nec feugiat nisl pretium fusce id. Vitae sapien pellentesque habitant morbi tristique senectus.</p>
+
+            <!-- <div class="transcript-item">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus in nisi sit amet egestas.</p>
+              <p>Duis id felis sed magna maximus lobortis vel malesuada mauris. Nullam vitae est diam. Phasellus fringilla rutrum enim.</p>
+              <p>Mauris venenatis pretium est, eu ornare lacus convallis in. Morbi imperdiet cursus ex eget egestas. Duis sed est ac magna sollicitudin viverra tristique quis neque.</p>
             </div> -->
+
+            <button aria-label="Open video transcipt" id="transcript-btn-label" class="transcript-link"><i class="fa-solid fa-caret-right"></i> Open Video Transcript</button>
           </div>
         </div>
       </section>
@@ -175,5 +188,6 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 </html>
