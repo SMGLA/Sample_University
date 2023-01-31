@@ -2,6 +2,7 @@
 @import url('../css/main_featured.css');
 @import url('../css/main_discover.css');
 @import url('../css/main_contact.css');
+
 $color-theme: #0E1A44;
 $color-highlight: #FEDD00;
 $color-forcus: #FE4400;
@@ -50,9 +51,9 @@ iframe {
   border-width: 0px;
 }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
 h1,
 h2,

@@ -9,7 +9,6 @@
   &__cards {
     width: 100%;
     a {
-      border: 3px solid goldenrod;
       display: contents;
     }
     @media (min-width: 768px) {
@@ -26,6 +25,11 @@
     display: flex;
     flex-direction: column;
     color: #0E1A44;
+    &:focus {
+      border-radius: 10px;
+      outline: 4px red solid;
+      border: 0.4rem;
+      }
     .card-text {
       order: 1;
       display: flex;

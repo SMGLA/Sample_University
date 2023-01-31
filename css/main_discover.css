@@ -16,6 +16,7 @@
 .discover__wrapper .box-bottom iframe {
   width: 100%;
   border: none;
+  border-width: 0px;
   border-radius: 20px;
 }
 @media (min-width: 768px) {
@@ -25,9 +26,8 @@
 }
 .discover__wrapper .box-bottom button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   cursor: pointer;
-  outline: none;
   padding: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -50,8 +50,18 @@
 .discover__wrapper .box-bottom .transcript-link i {
   margin-right: 0.4rem;
 }
-.discover__wrapper .box-bottom .transcript {
+.discover .transcript-item {
+  color: red;
   width: auto;
   margin-left: 2rem;
   font-size: 1.4rem;
+  display: none;
+}
+
+.transcript-item {
+  color: red;
+  width: auto;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  display: none;
 }/*# sourceMappingURL=main_discover.css.map */
