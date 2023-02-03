@@ -1,0 +1,114 @@
+@use 'global' as g;
+
+.contact {
+  background-color: g.$section-bg;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding: 1rem 0;
+  width: 100%;
+  &__wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 3rem auto;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__header {
+    @media (min-width: 768px) {
+      width: 30%;
+      h2 {
+        margin-top: 1.2rem;
+      }
+    }
+    margin-right: 1%;
+    p {
+      margin: 0.8rem 0 2rem;
+    }
+  }
+  &__form {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 90%;
+      padding-left: 2%;
+    }
+    fieldset {
+      border: none;
+      margin: 0 0 1rem;
+      padding: 0;
+      a {
+        color: g.$theme-color-main;
+        text-decoration: underline;
+      }
+      legend {
+        margin: 0rem 0 1rem;
+      }
+      label {
+        display: block;
+        margin: 1rem 0;
+      }
+      .required-text {
+        color: g.$required-mark;
+        &::before {
+          content: "*";
+        }
+      }
+      input, textarea, select {
+        background-color: g.$theme-color-white;
+        border: 4px solid g.$theme-color-main;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        color: g.$input-element-placeholder;
+        margin: 0.4rem 0;
+        min-height: 3em;
+        padding: 0.2em 1em;
+        width: 100%;
+      }
+      label,
+      input[type='checkbox'],
+      button {
+        cursor: pointer;
+      }
+      .dropdown {
+        padding: 0.6rem;
+        width:100%;
+      }
+      .option {
+        margin: -0.4rem auto auto 1rem;
+      }
+      .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+      }
+      button[type="submit"] {
+        display: block;
+        width: 30%;
+        margin: 1em 0 0 auto;
+        height: 2em;
+        font-size: 1.4rem;
+        background-color: g.$theme-color-main;
+        color: g.$theme-color-white;
+        min-width: 300px;
+        border: 4px solid  g.$theme-color-main;
+        border-radius: 10px;
+        min-height: 2.6em;
+        padding: 0.2em 0.4em;
+      }
+      button[type="submit"]:hover {
+        border: 4px solid g.$button-element-hover;
+        background-color: g.$button-element-hover;
+      }
+      input[type="radio"], input[type="checkbox"]{
+        margin-left: 16px;
+      }
+      ::placeholder {
+        color: g.$input-element-placeholder;
+      }
+      
+    }
+    fieldset:last-of-type {
+      text-align: right;
+    }
+  }
+}

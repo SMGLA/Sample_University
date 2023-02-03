@@ -1,0 +1,58 @@
+/* COMMON SETTINGS */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus-visible {
+  border-radius: 10px;
+  outline: 0.4rem #FE4400 solid;
+  outline-offset: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Jaldi", sans-serif;
+  color: #0E1A44;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+iframe {
+  border-width: 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #0E1A44;
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main section {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

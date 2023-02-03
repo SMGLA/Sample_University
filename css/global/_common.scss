@@ -1,0 +1,65 @@
+@use 'global' as g;
+
+
+/* COMMON SETTINGS */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus-visible {
+  border-radius: 10px;
+  outline: 0.4rem g.$color-focus solid;
+  outline-offset: 0;
+  }
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: g.$font-main;
+  color: g.$color-theme;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+iframe {
+  border-width: 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: g.$color-theme;
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+
+// -------- MAIN -------- //
+main {
+  width: 100%;
+  margin: 0 auto;
+  section {
+    width: 100%;
+  }
+}
+

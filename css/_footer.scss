@@ -1,0 +1,49 @@
+@use 'global' as g;
+
+// -------- FOOTER -------- //
+footer {
+  width: 100%;
+  height: 40vh;
+  background: g.$color-theme;
+  text-align: center;
+  .footer__wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    img {
+      width: 100px;
+    }
+  }
+
+  .footer__wrapper--container-right {
+    width: auto;
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+    margin-top: auto;
+    margin-bottom: 0;
+    address,
+    small {
+      color: g.$color-white;
+      font-style: unset;
+    }
+  }
+
+  .footer__wrapper--container-sns {
+    width: auto;
+    font-size: 1.4rem;
+    color: g.$color-white;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    i {
+      color: g.$color-white;
+      margin: 0.5rem;
+      }
+    }
+}

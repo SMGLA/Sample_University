@@ -1,3 +1,5 @@
+@use 'global' as g;
+
 
 .discover {
   margin: 0 auto;
@@ -23,7 +25,7 @@
       }
       button {
         background-color: transparent;
-        border: 1px solid #FFFFFF;
+        border: 1px solid $color-white;
         cursor: pointer;
         padding: 0;
         appearance: none;
@@ -41,9 +43,9 @@
           padding: 10px 0px;
           border: none;
           border-radius: 10px;
-          background: #FFFFFF;
+          background: $color-white;
           font-size: 1.4rem;
-          color: #0E1A44;
+          color: $color-theme;
           }
   
         .transcript-item {
@@ -51,12 +53,12 @@
           width: auto;
           margin-left: 2%;
           border-radius: 20px;
-          background: #EEEEEE;
+          background: $color-lightgrey;
           margin-bottom: 0.4rem;
           padding: 2rem;
           font-size: 1.2rem;
           font-family: sans-serif;
-          color: #333333;
+          color: $color-darkgrey;
         }
       }
     }
