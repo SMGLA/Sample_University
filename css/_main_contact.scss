@@ -1,7 +1,7 @@
 @use 'global' as g;
 
 .contact {
-  background-color: g.$section-bg;
+  background-color: g.$color-lightgrey;
   font-size: 1.4rem;
   line-height: 1.6rem;
   padding: 1rem 0;
@@ -37,7 +37,7 @@
       margin: 0 0 1rem;
       padding: 0;
       a {
-        color: g.$theme-color-main;
+        color: g.$color-theme;
         text-decoration: underline;
       }
       legend {
@@ -48,17 +48,17 @@
         margin: 1rem 0;
       }
       .required-text {
-        color: g.$required-mark;
+        color: g.$color-focus;
         &::before {
           content: "*";
         }
       }
       input, textarea, select {
-        background-color: g.$theme-color-white;
-        border: 4px solid g.$theme-color-main;
+        background-color: g.$color-white;
+        border: 4px solid g.$color-theme;
         border-radius: 10px;
         font-size: 1.1rem;
-        color: g.$input-element-placeholder;
+        color: g.$color-darkgrey;
         margin: 0.4rem 0;
         min-height: 3em;
         padding: 0.2em 1em;
@@ -87,10 +87,10 @@
         margin: 1em 0 0 auto;
         height: 2em;
         font-size: 1.4rem;
-        background-color: g.$theme-color-main;
-        color: g.$theme-color-white;
+        background-color: g.$color-theme;
+        color: g.$color-white;
         min-width: 300px;
-        border: 4px solid  g.$theme-color-main;
+        border: 4px solid  g.$color-theme;
         border-radius: 10px;
         min-height: 2.6em;
         padding: 0.2em 0.4em;
@@ -103,9 +103,8 @@
         margin-left: 16px;
       }
       ::placeholder {
-        color: g.$input-element-placeholder;
+        color: g.$color-darkgrey;
       }
-      
     }
     fieldset:last-of-type {
       text-align: right;

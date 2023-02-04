@@ -12,16 +12,31 @@
 
   <header class="header">
     <div class="header__container">
-      <div id="skipNav"><a href="#main" tabindex="1">Skip to content</a></div>
-        <img src="img/logo.png" alt="Sample University" id="header-img" width="100" class="header__logo" aria-label="Sample University" tabindex="2">
+      <div id="skipNav">
+        <a href="#main" tabindex="1">Skip to content</a>
+      </div>
+      <img src="img/logo.png" alt="Sample University" id="header-img" width="100" aria-label="Sample University" tabindex="2">
       <nav aria-label="Site navigation and site search">
         <ul>
           <li><a href="#featured" class="nav-link" tabindex="3">Featured</a></li>
           <li><a href="#discover-sample" class="nav-link" tabindex="4">Discover Sample</a></li>
           <li><a href="#contact-us" class="nav-link" tabindex="5">Contact Us</a></li>
         </ul>
-          <button type="button" aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
       </nav>
+
+      <div class="header__search-wrapper">
+        <button class="search-icon" type="button"  aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        <div class="search-form-main clearfix">
+          <form role="search" method="get" class="search-form" action="#">
+            <label>
+              <input type="search" class="search-field" placeholder="Enter keywords" value="" name="s">
+            </label>
+            <button type="submit" class="search-submit" value="Search">Search</button>
+          </form>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -140,8 +155,26 @@
           <div class="contact__form">
             <form action='#'>
               
+              <fieldset>
+                <label for="name" aria-label="required">
+                  Name <span class="required-text"></span>
+                  <input type="text" id="name" required placeholder="e.g. John Smith">
+                </label>
+                <label for="email" aria-label="required">
+                  Email <span class="required-text"></span>
+                  <input type="email" id="email" required placeholder="e.g. john@example.com">
+                </label>
+                <label for="dropdown">
+                  Subject
+                  <select id="dropdown" name="dropdown" class="dropdown">
+                    <option value="">(Please select one)</option>
+                    <option value="Enquiry">Enquiry</option>
+                    <option value="Request">Request</option>
+                    <option value="Complaint">Complaint</option>
+                  </select>
+                </label>
+              </fieldset>
    
-              
               <fieldset>
                 <legend>How would you like us to contact you? <span class="required-text"></span></legend>
                 <label for="radio1" class="option"><input type="radio" id="radio1" name="radio-type" class="inline" value="Email"> Email</label>
