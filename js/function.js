@@ -1,3 +1,11 @@
+// HEADER SEARCH POPUP WINDOW
+$('.header__search-wrapper .search-icon').click(function(){
+  $('.search-form-main').toggleClass('active-search');
+  $('.search-form-main .search-field').focus();
+});
+
+
+// TRANSCRIPT ANIMATION
 $(function() {
   $(".transcript-link").on('click', function() {
   $(".transcript-item").slideToggle(500,alertFunc);
