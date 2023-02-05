@@ -179,11 +179,13 @@ main section {
   width: 72%;
   float: left;
   height: 3rem;
+  font-size: 1.1rem;
 }
 .header .header__search-wrapper .search-form-main .search-submit {
   border: medium none;
   border-radius: 0;
   box-shadow: none;
+  font-size: 1.1rem;
   color: #FFFFFF;
   float: left;
   padding: 10px 0 10px;
