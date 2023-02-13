@@ -12,20 +12,15 @@
 
   <header class="header">
     <div class="header__container">
+
       <div id="skipNav">
         <a href="#main" tabindex="1">Skip to content</a>
       </div>
+
       <img src="img/logo.png" alt="Sample University" id="header-img" width="100" aria-label="Sample University" tabindex="2">
-      <nav aria-label="Site navigation and site search">
-        <ul>
-          <li><a href="#featured" class="nav-link" tabindex="3">Featured</a></li>
-          <li><a href="#discover-sample" class="nav-link" tabindex="4">Discover Sample</a></li>
-          <li><a href="#contact-us" class="nav-link" tabindex="5">Contact Us</a></li>
-        </ul>
-      </nav>
 
       <div class="header__search-wrapper">
-        <button class="search-icon" type="button"  aria-label="Toggle search" tabindex="6"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-icon" type="button"  aria-label="Toggle search" tabindex="3"><i class="fa-solid fa-magnifying-glass"></i></button>
 
         <div class="search-form-main clearfix">
           <form role="search" method="get" class="search-form" action="#">
@@ -37,6 +32,31 @@
         </div>
       </div>
 
+      <nav aria-label="Site navigation and site search">
+        <ul class="nav__menu">
+          <li class="nav__menu-item"><a href="#featured" class="nav-link" tabindex="4">Featured</a></li>
+          <li class="nav__menu-item"><a href="#discover-sample" class="nav-link" tabindex="5">Discover Sample</a></li>
+          <li class="nav__menu-item"><a href="#contact-us" class="nav-link" tabindex="6">Contact Us</a></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <div class="header__hamburger">
+          <button class="hamburger-button" button-name="Menu" aria-label="Contents Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menuLayer">
+            <ul class="menuLayer-menu">
+              <li class="menuLayer-menu-item"><a href="#featured">Featured</a></li>
+              <li class="menuLayer-menu-item"><a href="#discover-sample">Discover Sample</a></li>
+              <li class="menuLayer-menu-item"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+      </div>
+
+      </nav>
+
     </div>
   </header>
 
@@ -45,7 +65,7 @@
       <h1>Welcome to Sample University</h1>
     </div>
     <figure>
-        <img src="img/hero.png" alt="Photo of Glasgow city centre">
+        <img src="img/hero.jpg" alt="Photo of Glasgow city centre">
     </figure>
   </div>
 
@@ -199,7 +219,7 @@
                 <label for="terms-and-conditions">
                   <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="checked"> I accept the <a href="#">terms and conditions</a>
                 </label>
-                <button type="submit" id="submit" value="Proceed to review">Proceed to review</button>
+                <button type="submit" id="submit" value="Proceed to review" aria-label="Proceed to review">Proceed to review</button>
               </fieldset>
               
             </form>
@@ -216,7 +236,7 @@
       </div>
       <div class="footer__wrapper--container-right">
         <small>©2023 Sample University</small>
-        <address>Address: 100 Victoria road, Glasgow G2 3TG United Kingdom</address>
+        <address>Address: 100 Sample road, Glasgow G0 3AB United Kingdom</address>
       </div>
       <div class="footer__wrapper--container-sns">
         <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>

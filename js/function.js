@@ -5,6 +5,16 @@ $('.header__search-wrapper .search-icon').click(function(){
 });
 
 
+// HAMBURGER MENU
+$('.hamburger-button').click(function() {
+  $('.header__hamburger').toggleClass('is-active');
+  $('.menuLayer').toggleClass('is-active');
+});
+$('.menuLayer-menu-item').click(function() {
+  $('.header__hamburger').removeClass('is-active');
+  $('.menuLayer').removeClass('is-active');
+});
+
 // TRANSCRIPT ANIMATION
 $(function() {
   $(".transcript-link").on('click', function() {

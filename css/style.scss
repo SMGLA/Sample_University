@@ -1,7 +1,10 @@
-@forward 'global';
-@forward 'header';
+@forward 'global'; // フォルダ名 /global/
+@forward 'header'; // _header.scss
 @forward 'hero';
 @forward 'main_featured';
 @forward 'main_discover';
 @forward 'main_contact';
 @forward 'footer';
+
+// style.css に　forwardするためにまずここに取り込むイメージ
+// それぞれのファイルで他のファイルを使用する場合は@useを使う
